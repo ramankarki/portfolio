@@ -1,0 +1,118 @@
+@import "../variables.scss";
+
+.header {
+  &__ {
+    &wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0;
+      position: relative;
+    }
+
+    &logo {
+      width: 40px;
+      height: auto;
+
+      @media (min-width: 768px) {
+        width: 70px;
+      }
+    }
+
+    &hamburgurBtn {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.nav {
+  @media (max-width: 767px) {
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+    background-color: $app-background-color;
+    transition: width 300ms ease-out;
+    overflow: hidden;
+
+    &-active {
+      width: 100%;
+      padding-right: 2rem;
+    }
+  }
+
+  &__links {
+    color: $inActive-link-color;
+    padding: 0.5rem 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: $secondary-app-color;
+      left: 0;
+      bottom: 0;
+      transition: width 300ms ease-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $inActive-link-color;
+    }
+
+    @media (min-width: 768px) {
+      padding: 0.5rem 2rem;
+    }
+
+    &-active {
+      color: $secondary-app-color;
+      font-weight: bold;
+
+      &:hover {
+        color: $secondary-app-color;
+      }
+    }
+  }
+}
+
+.hamburgurBtn {
+  cursor: pointer;
+  z-index: 3;
+
+  &-active .hamburgurBtn__two {
+    opacity: 0;
+  }
+
+  &-active .hamburgurBtn__one {
+    transform: translateY(0.6rem) rotate(45deg);
+  }
+
+  &-active .hamburgurBtn__three {
+    transform: translateY(-0.6rem) rotate(-45deg);
+  }
+
+  &__ {
+    &one,
+    &two,
+    &three {
+      transition: 300ms ease-out;
+      width: 30px;
+      height: 4px;
+      background-color: $secondary-app-color;
+      margin: 0.4rem 0;
+      border-radius: 100rem;
+    }
+  }
+}
