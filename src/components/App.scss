@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +18,6 @@ picture {
 }
 
 body {
-  background-color: #081623;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  background-color: $app-background-color !important;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif !important;
 }
