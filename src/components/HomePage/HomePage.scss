@@ -21,6 +21,8 @@ $two-column: 768px;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    box-shadow: #1a3f61 5px 5px, #14324eb9 10px 10px, #0f273d94 15px 15px,
+      #0a1c2c80 20px 20px, #081622bd 25px 25px;
 
     @media (min-width: 450px) {
       height: 350px;
