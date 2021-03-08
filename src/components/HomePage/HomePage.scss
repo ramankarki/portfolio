@@ -55,6 +55,10 @@ $two-column: 768px;
     margin-top: 2rem;
     font-size: 2.2rem;
 
+    @media (max-width: $two-column - 1px) {
+      margin-top: 3rem;
+    }
+
     @media (min-width: 400px) {
       font-size: 2.6rem;
     }
