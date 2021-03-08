@@ -8,6 +8,10 @@
       align-items: center;
       padding: 2rem 0;
       position: relative;
+
+      @media (min-width: 768px) {
+        padding-bottom: 4rem;
+      }
     }
 
     &logo {
