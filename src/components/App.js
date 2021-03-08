@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header";
 import HomePage from "./HomePage";
 import "./App.scss";
+import scrollDownIcon from "./scroll-down.svg";
 
 class App extends React.Component {
   render() {
@@ -11,6 +12,11 @@ class App extends React.Component {
       <div className="container">
         <Header />
         <HomePage />
+        <div className="scrollDown">
+          <span>
+            Scroll down <img src={scrollDownIcon} alt="scroll down icon" />
+          </span>
+        </div>
       </div>
     );
   }

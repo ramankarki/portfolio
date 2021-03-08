@@ -21,3 +21,35 @@ body {
   background-color: $app-background-color !important;
   font-family: "PT Sans", Arial, Helvetica, sans-serif !important;
 }
+
+.scrollDown {
+  max-width: max-content;
+  margin: 3rem auto;
+
+  span {
+    color: $inActive-link-color;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  img {
+    width: 50px;
+    height: auto;
+    filter: invert(100%);
+    animation-name: bounce;
+    animation-timing-function: ease-out;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
