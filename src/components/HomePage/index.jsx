@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import "./HomePage.scss";
-import avatar from "../homepage_avatar.jpg";
+import avatar from "./homepage_avatar.jpg";
 
 class index extends Component {
   render() {
