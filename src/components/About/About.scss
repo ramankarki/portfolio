@@ -1,0 +1,89 @@
+@import "../variables.scss";
+
+.about {
+  max-width: 300px;
+  margin: auto;
+
+  @media (min-width: 768px) {
+    max-width: 620px;
+  }
+
+  &__heading {
+    color: $secondary-app-color;
+    font-weight: bold;
+    max-width: max-content;
+    margin: auto;
+    margin-bottom: 4rem;
+
+    &::after {
+      @include heading-underline;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__avatar,
+  &__desc {
+    @media (min-width: 768px) {
+      flex: 1;
+    }
+  }
+
+  &__avatar {
+    height: 340px;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 2rem 2rem 0 0 $texture-background-color;
+
+    @media (min-width: 768px) {
+      margin-right: 3rem;
+      height: 300px;
+    }
+
+    img {
+      display: block;
+      margin-top: 10rem;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__desc {
+    padding-top: 3rem;
+
+    p {
+      margin-top: 0.7rem;
+      margin-bottom: 2rem;
+      color: $normal-text-color;
+    }
+
+    @media (min-width: 768px) {
+      padding: 2rem;
+
+      p {
+        margin-bottom: 3rem;
+      }
+    }
+
+    img {
+      display: block;
+      width: 70%;
+      max-width: 120px;
+      height: auto;
+
+      @media (max-width: 767px) {
+        margin: auto;
+        width: 50%;
+      }
+    }
+  }
+}
