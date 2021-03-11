@@ -8,3 +8,13 @@ $secondary-app-color: #e2e2e2;
 $inActive-link-color: #a6a6a6;
 
 $normal-text-color: #cdcdcd;
+
+@mixin heading-underline {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-top: 0.3rem;
+  width: 90%;
+  height: 3px;
+  background-color: $primary-app-color;
+}
