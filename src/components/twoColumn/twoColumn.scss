@@ -1,0 +1,96 @@
+@import "../variables.scss";
+
+.section {
+  margin: 5rem auto;
+
+  @media (min-width: 768px) {
+    margin: 8rem auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-reverse {
+      .section__desc {
+        @media (max-width: 767px) {
+          width: 90%;
+        }
+
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 0 0 2rem 2rem;
+      }
+
+      @media (min-width: 768px) {
+        flex-direction: row-reverse;
+
+        .section__desc {
+          padding: 2rem 3rem 2.5rem 2rem;
+          border-radius: 2rem 0 0 2rem;
+        }
+      }
+    }
+  }
+
+  &__picture {
+    z-index: 1;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      margin: 0;
+    }
+  }
+
+  &__desc {
+    padding: 2rem 2rem 2.5rem 3rem;
+    background-color: $texture-background-color;
+    border-radius: 0 2rem 2rem 0;
+
+    @media (max-width: 767px) {
+      width: 90%;
+      margin: auto;
+      border-radius: 0 0 2rem 2rem;
+      transform: translateY(-0.35rem);
+    }
+
+    img {
+      width: 30px;
+      height: auto;
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    p {
+      margin: 0;
+      margin-top: 1rem;
+      color: $normal-text-color;
+      line-height: 2rem;
+    }
+  }
+
+  &__picture {
+    @media (min-width: 768px) {
+      width: 180%;
+    }
+  }
+
+  &__desc {
+    @media (min-width: 768px) {
+      width: 120%;
+    }
+  }
+}
