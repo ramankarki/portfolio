@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 
 import "./Projects.scss";
-import liveIcon from "./internet_icon.svg";
-import githubIcon from "./github_icon.svg";
-import chatAppSS from "./chat_app.png";
-import folderListAppSS from "./folder_list_app.png";
-import weatherAppSS from "./weather_app.png";
-import jobSearchSS from "./job_search_app.png";
-import reactIcon from "./react.svg";
-import reduxIcon from "./redux.svg";
-import bootstrapIcon from "./bootstrap.svg";
-import sassIcon from "./sass.svg";
-import nodeIcon from "./node.svg";
-import mongodbIcon from "./mongodb.svg";
-import htmlIcon from "./html.svg";
-import cssIcon from "./css.svg";
-import jsIcon from "./js.svg";
+import liveIcon from "./img/internet_icon.svg";
+import githubIcon from "./img/github_icon.svg";
+import chatAppSS from "./img/chat_app.png";
+import folderListAppSS from "./img/folder_list_app.png";
+import weatherAppSS from "./img/weather_app.png";
+import jobSearchSS from "./img/job_search_app.png";
+import reactIcon from "./img/react.svg";
+import reduxIcon from "./img/redux.svg";
+import bootstrapIcon from "./img/bootstrap.svg";
+import sassIcon from "./img/sass.svg";
+import nodeIcon from "./img/node.svg";
+import mongodbIcon from "./img/mongodb.svg";
+import htmlIcon from "./img/html.svg";
+import cssIcon from "./img/css.svg";
+import jsIcon from "./img/js.svg";
 
 export default class index extends Component {
   render() {
