@@ -54,7 +54,7 @@ export default class index extends Component {
 
   render() {
     return (
-      <section className="contact">
+      <section className="contact" id="contact">
         <div className="contact__heading">
           <h2>Contact me</h2>
           <p>Let's have some conversation</p>

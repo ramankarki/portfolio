@@ -22,16 +22,19 @@ class index extends Component {
         <div className="header__wrapper">
           <img className="header__logo" src={logo} alt="logo of my portfolio" />
           <nav className={`header__nav ${this.navClass()}`}>
-            <a href="#" className="nav__links nav__links nav__links-active">
+            <a
+              href="#homepage"
+              className="nav__links nav__links nav__links-active"
+            >
               Home
             </a>
-            <a href="#" className="nav__links">
+            <a href="#about" className="nav__links">
               About
             </a>
-            <a href="#" className="nav__links">
+            <a href="#projects" className="nav__links">
               Projects
             </a>
-            <a href="#" className="nav__links">
+            <a href="#contact" className="nav__links">
               Contact
             </a>
           </nav>

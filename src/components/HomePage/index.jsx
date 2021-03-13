@@ -6,7 +6,7 @@ import avatar from "./homepage_avatar.jpg";
 class index extends Component {
   render() {
     return (
-      <section className="homepage">
+      <section className="homepage" id="homepage">
         <picture className="homepage__avatar">
           <img src={avatar} alt="my avatar" />
         </picture>
@@ -17,7 +17,7 @@ class index extends Component {
             I build full stack web apps with <span>MERN</span> stack
           </p>
           <div className="heroText__callToAction">
-            <button>Hire me</button>
+            <a href="#contact">Hire me</a>
             <p>or lets build a great project together</p>
           </div>
         </div>

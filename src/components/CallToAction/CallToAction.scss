@@ -32,7 +32,8 @@
     margin: 0;
   }
 
-  button {
+  a {
+    text-align: center;
     display: inline-block;
     margin-top: 1.5rem;
     padding: 0.7rem 1.5rem;
@@ -52,6 +53,7 @@
       &:hover {
         color: $primary-app-color;
         background-color: $secondary-app-color;
+        text-decoration: none;
       }
     }
 

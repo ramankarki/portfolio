@@ -7,7 +7,7 @@ import illustration from "./about_illustration.svg";
 export default class index extends Component {
   render() {
     return (
-      <section className="about">
+      <section className="about" id="about">
         <h2 className="about__heading">About me</h2>
         <div className="about__content">
           <picture className="about__avatar">

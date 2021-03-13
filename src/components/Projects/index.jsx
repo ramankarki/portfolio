@@ -20,7 +20,7 @@ import jsIcon from "./img/js.svg";
 export default class index extends Component {
   render() {
     return (
-      <section className="projects">
+      <section className="projects" id="projects">
         <div className="projects__heading">
           <h2>My Projects</h2>
           <p>I build while learning</p>

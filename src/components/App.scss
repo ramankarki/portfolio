@@ -17,6 +17,10 @@ picture {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $app-background-color !important;
   font-family: "PT Sans", Arial, Helvetica, sans-serif !important;

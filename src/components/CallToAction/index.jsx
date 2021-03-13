@@ -13,7 +13,7 @@ export default class index extends Component {
             project together.
           </p>
         </div>
-        <button>Let's do it</button>
+        <a href="#contact">Let's do it</a>
       </section>
     );
   }
