@@ -1,11 +1,18 @@
 import React, { Component } from "react";
 
 import "./Contact.scss";
+import exitIcon from "./exit.svg";
 
 export default class index extends Component {
-  state = { name: "", email: "", subject: "", message: "", formState: "" };
+  state = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+    formState: "typing",
+  };
 
-  onSubmit = (event) => {
+  onSubmit = async (event) => {
     event.preventDefault();
 
     let formData = new FormData();
@@ -17,23 +24,32 @@ export default class index extends Component {
 
     this.setState({ formState: "submitting" });
 
-    console.log(this.state);
-
-    fetch("/", {
+    await fetch("https://github.com/new", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: formData,
     })
       .then(() => {
-        this.setState({ formState: "submitted" });
+        this.setState({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+          formState: "submitted",
+        });
       })
       .catch((error) => this.setState({ formState: "failed" }));
-
-    this.setState({ name: "", email: "", subject: "", message: "" });
   };
 
   onInputChange = (event) => {
-    this.setState({ [event.target.name]: event.target.value });
+    this.setState({
+      [event.target.name]: event.target.value,
+      formData: "typing",
+    });
+  };
+
+  onModalExit = () => {
+    this.setState({ formState: "exit modal" });
   };
 
   render() {
@@ -100,6 +116,18 @@ export default class index extends Component {
             )}
           </button>
         </form>
+
+        {this.state.formState === "submitted" ? (
+          <p className="form-success">
+            Form submitted successfully{" "}
+            <img onClick={this.onModalExit} src={exitIcon} alt="exit icon" />
+          </p>
+        ) : this.state.formState === "failed" ? (
+          <p className="form-failed">
+            Form submittion failed{" "}
+            <img onClick={this.onModalExit} src={exitIcon} alt="exit icon" />
+          </p>
+        ) : null}
       </section>
     );
   }

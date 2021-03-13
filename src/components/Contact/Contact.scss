@@ -1,6 +1,7 @@
 @import "../variables.scss";
 
 .contact {
+  width: 90%;
   max-width: 600px;
   margin: auto;
 
@@ -106,5 +107,33 @@
 }
 
 .text-primary {
-  color: $secondary-app-color !important;
+  color: $app-background-color !important;
+}
+
+.form {
+  &-success {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #b2e9d3;
+    background-color: #149461;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 20px;
+      filter: invert(90%);
+      margin-left: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  &-failed {
+    @extend .form-success;
+    background-color: rgb(177, 62, 62);
+  }
 }
