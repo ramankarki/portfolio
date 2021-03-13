@@ -1,0 +1,57 @@
+@import "../variables.scss";
+
+.cta {
+  margin: 5rem auto;
+  max-width: 800px;
+  background-color: $primary-app-color;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 2rem 2rem 0 0 $texture-background-color;
+
+  @media (min-width: 768px) {
+    padding: 3rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7rem auto;
+  }
+
+  h3 {
+    color: $secondary-app-color;
+    font-weight: bold;
+  }
+
+  p {
+    color: $normal-text-color;
+    line-height: 2rem;
+    margin: 0;
+  }
+
+  button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    min-width: 140px;
+    border: 2px solid $secondary-app-color;
+    background-color: $primary-app-color;
+    border-radius: 100rem;
+    font-weight: bold;
+    color: $secondary-app-color;
+    font-size: 1.1rem;
+    transition: color 300ms ease-out, background-color 300ms ease-out;
+
+    @media (min-width: 768px) {
+      margin-left: 4rem;
+      margin-top: initial;
+
+      &:hover {
+        color: $primary-app-color;
+        background-color: $secondary-app-color;
+      }
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
