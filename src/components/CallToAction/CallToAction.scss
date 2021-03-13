@@ -19,6 +19,11 @@
   h3 {
     color: $secondary-app-color;
     font-weight: bold;
+    margin-bottom: 1rem;
+
+    @media (max-width: 575px) {
+      font-size: 1.35rem;
+    }
   }
 
   p {
