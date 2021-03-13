@@ -7,6 +7,7 @@ import About from "./About";
 import TwoColumn from "./twoColumn";
 import MyTools from "./MyTools";
 import Projects from "./Projects";
+import CallToAction from "./CallToAction";
 import "./App.scss";
 import scrollDownIcon from "./scroll-down.svg";
 import locationIcon from "./location_icon.svg";
@@ -131,6 +132,8 @@ class App extends React.Component {
         <MyTools />
 
         <Projects />
+
+        <CallToAction />
       </div>
     );
   }
