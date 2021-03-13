@@ -1,17 +1,19 @@
 @import "../variables.scss";
 
 .header {
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  margin: 2rem 0;
+
   &__ {
     &wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 2rem 0;
       position: relative;
-
-      @media (min-width: 768px) {
-        padding-bottom: 4rem;
-      }
+      background-color: $app-background-color;
+      transition: 300ms ease-out;
     }
 
     &logo {
