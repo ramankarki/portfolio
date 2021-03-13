@@ -1,0 +1,92 @@
+@import "../variables.scss";
+
+.myTools {
+  &__heading {
+    max-width: max-content;
+    margin: auto;
+    text-align: center;
+
+    &::after {
+      @include heading-underline;
+    }
+
+    h2 {
+      color: $secondary-app-color;
+      font-weight: bold;
+    }
+
+    p {
+      color: $normal-text-color;
+    }
+  }
+}
+
+.toolsTable {
+  background-color: $texture-background-color;
+  margin-top: 3rem;
+  border-radius: 2rem;
+  padding: 3rem;
+  padding-top: 4rem;
+
+  &__webDesign,
+  &__frontend,
+  &__backend,
+  &__someOthers {
+    text-align: center;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #21486c;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 70px;
+    }
+
+    h3 {
+      color: $secondary-app-color;
+      font-size: 1.3rem;
+      margin: 1.5rem 0;
+      font-weight: bold;
+    }
+
+    p {
+      color: $normal-text-color;
+      line-height: 1.3rem;
+    }
+  }
+
+  &__frontend,
+  &__backend {
+    @media (max-width: 767px) {
+      margin-top: 3rem;
+    }
+  }
+
+  &__someOthers {
+    border-bottom: none;
+    padding-top: 3rem;
+    padding-bottom: 0;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 2rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__webDesign,
+    &__frontend {
+      border-right: 1px solid #21486c;
+    }
+
+    &__someOthers {
+      grid-column: span 3;
+    }
+  }
+}
