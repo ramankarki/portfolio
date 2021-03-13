@@ -6,6 +6,7 @@ import HomePage from "./HomePage";
 import About from "./About";
 import TwoColumn from "./twoColumn";
 import MyTools from "./MyTools";
+import Projects from "./Projects";
 import "./App.scss";
 import scrollDownIcon from "./scroll-down.svg";
 import locationIcon from "./location_icon.svg";
@@ -128,6 +129,8 @@ class App extends React.Component {
         </TwoColumn>
 
         <MyTools />
+
+        <Projects />
       </div>
     );
   }
