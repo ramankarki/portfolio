@@ -1,0 +1,110 @@
+@import "../variables.scss";
+
+.contact {
+  max-width: 600px;
+  margin: auto;
+
+  &__heading {
+    text-align: center;
+    max-width: max-content;
+    margin: auto;
+
+    &::after {
+      @include heading-underline;
+    }
+
+    h2 {
+      color: $secondary-app-color;
+      font-weight: bold;
+    }
+
+    p {
+      color: $normal-text-color;
+    }
+  }
+}
+
+.form {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 2rem;
+
+  label {
+    input,
+    textarea {
+      width: 100%;
+      background-color: $texture-background-color;
+      border: none;
+      color: $secondary-app-color;
+      border-radius: 0.3rem;
+    }
+
+    input {
+      border-bottom: 2px solid $texture-background-color;
+      padding: 0.5rem 1rem;
+
+      &:focus {
+        border-bottom-color: $primary-app-color;
+      }
+    }
+
+    textarea {
+      border: 2px solid $texture-background-color;
+      padding: 1rem;
+      min-height: 150px;
+      max-height: 250px;
+
+      &:focus {
+        border-color: $primary-app-color;
+      }
+    }
+  }
+
+  &__name,
+  &__email {
+    grid-column: span 2;
+
+    @media (min-width: 576px) {
+      grid-column: span 1;
+    }
+  }
+
+  &__subject,
+  &__message,
+  button {
+    grid-column: span 2;
+  }
+
+  p {
+    color: $secondary-app-color;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+  }
+
+  button {
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.3rem;
+    border: 2px solid $secondary-app-color;
+    background-color: $primary-app-color;
+    color: $secondary-app-color;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: 300ms ease-out;
+
+    &:active {
+      transform: scale(0.97);
+    }
+
+    @media (min-width: 992px) {
+      &:hover {
+        background-color: $secondary-app-color;
+        color: $primary-app-color;
+      }
+    }
+  }
+}
+
+.text-primary {
+  color: $secondary-app-color !important;
+}
