@@ -8,6 +8,8 @@ import TwoColumn from "./twoColumn";
 import MyTools from "./MyTools";
 import Projects from "./Projects";
 import CallToAction from "./CallToAction";
+import Contact from "./Contact";
+import Footer from "./Footer";
 import "./App.scss";
 import scrollDownIcon from "./scroll-down.svg";
 import locationIcon from "./location_icon.svg";
@@ -49,7 +51,7 @@ class App extends React.Component {
                 width="600"
                 height="350"
                 style={{ border: "0" }}
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
               ></iframe>
             </picture>
@@ -134,6 +136,10 @@ class App extends React.Component {
         <Projects />
 
         <CallToAction />
+
+        <Contact />
+
+        <Footer />
       </div>
     );
   }
