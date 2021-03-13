@@ -13,6 +13,7 @@
     text-align: center;
     max-width: max-content;
     margin: auto;
+    margin-top: 5rem;
 
     &::after {
       @include heading-underline;
@@ -53,7 +54,7 @@
     width: 90%;
     margin: auto;
     background-color: $texture-background-color;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem 2rem;
     border-radius: 0 0 1rem 1rem;
 
     @media (min-width: 768px) {
