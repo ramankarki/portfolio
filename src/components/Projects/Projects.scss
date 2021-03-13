@@ -1,0 +1,140 @@
+@import "../variables.scss";
+
+.projects {
+  margin-top: 5rem;
+
+  @media (min-width: 768px) {
+    margin-top: 7rem;
+  }
+
+  &__heading {
+    text-align: center;
+    max-width: max-content;
+    margin: auto;
+
+    &::after {
+      @include heading-underline;
+    }
+
+    h2 {
+      color: $secondary-app-color;
+      font-weight: bold;
+    }
+
+    p {
+      color: $normal-text-color;
+    }
+  }
+
+  &__cardsContainer {
+    margin-top: 4rem;
+  }
+}
+
+.card {
+  background-color: transparent;
+  margin-top: 5rem;
+
+  @media (min-width: 768px) {
+    & + .card {
+      margin-top: 7rem;
+    }
+  }
+
+  &__projectSS {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  &__content {
+    width: 90%;
+    margin: auto;
+    background-color: $texture-background-color;
+    padding: 1rem 1.5rem;
+    border-radius: 0 0 1rem 1rem;
+
+    @media (min-width: 768px) {
+      padding: 1.5rem 3rem 3rem;
+    }
+  }
+
+  &__heading {
+    font-weight: bold;
+    color: $secondary-app-color;
+    margin-top: 1rem;
+  }
+
+  &__subheading {
+    color: $primary-app-color;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  &__desc {
+    color: $normal-text-color;
+  }
+
+  &__techIcon {
+    width: 25px;
+    height: auto;
+    display: inline-block;
+    margin: 0 0.2rem;
+  }
+
+  span {
+    color: $inActive-link-color;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  &__button {
+    margin-top: 1.5rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      display: inline-block;
+
+      &:first-child {
+        margin-right: 2rem;
+        border: 2px solid $secondary-app-color;
+        padding: 0.4rem 1.3rem;
+        border-radius: 100rem;
+        color: $secondary-app-color;
+        background-color: $primary-app-color;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: 300ms ease-out;
+
+        img {
+          width: 20px;
+          margin-right: 0.3rem;
+          transition: 300ms ease-out;
+        }
+
+        &:hover {
+          text-decoration: none;
+          background-color: $secondary-app-color;
+          color: $texture-background-color;
+          img {
+            filter: invert(100%);
+          }
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+
+      &:nth-child(2) {
+        width: 30px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
