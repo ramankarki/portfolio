@@ -1,9 +1,13 @@
 @import "../variables.scss";
 
 .projects {
-  padding-top: 4rem;
+  padding-top: 2rem;
   max-width: 800px;
   margin: auto;
+
+  @media (min-width: 768px) {
+    padding-top: 4rem;
+  }
 
   &__heading {
     text-align: center;
