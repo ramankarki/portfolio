@@ -8,7 +8,7 @@ import backend from "./backend.svg";
 class index extends Component {
   render() {
     return (
-      <section className="myTools">
+      <section className="myTools" id="myTools">
         <div className="myTools__heading">
           <h2>My Tools</h2>
           <p>I use most frequently for my projects</p>
