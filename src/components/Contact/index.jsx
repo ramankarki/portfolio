@@ -24,7 +24,7 @@ export default class index extends Component {
 
     this.setState({ formState: "submitting" });
 
-    await fetch("https://github.com/new", {
+    await fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: formData,
