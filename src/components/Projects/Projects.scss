@@ -1,12 +1,12 @@
 @import "../variables.scss";
 
 .projects {
-  margin-top: 5rem;
+  padding-top: 5rem;
   max-width: 800px;
   margin: auto;
 
   @media (min-width: 768px) {
-    margin-top: 7rem;
+    padding-top: 7rem;
   }
 
   &__heading {

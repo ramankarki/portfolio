@@ -1,7 +1,7 @@
 @import "../variables.scss";
 
 .cta {
-  margin: 5rem auto;
+  margin: 5rem auto 0;
   max-width: 800px;
   background-color: $primary-app-color;
   padding: 2rem;
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 7rem auto;
+    margin: 7rem auto 0;
   }
 
   h3 {

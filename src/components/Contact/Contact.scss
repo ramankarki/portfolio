@@ -1,9 +1,14 @@
 @import "../variables.scss";
 
 .contact {
+  padding-top: 5rem;
   width: 90%;
   max-width: 600px;
   margin: auto;
+
+  @media (min-width: 768px) {
+    padding-top: 7rem;
+  }
 
   &__heading {
     text-align: center;
