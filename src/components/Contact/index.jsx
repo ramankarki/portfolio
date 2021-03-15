@@ -62,10 +62,12 @@ export default class index extends Component {
 
         <form
           className="contact__form form"
-          data-netlify={true}
           name="ramanContact"
+          method="POST"
+          data-netlify={true}
           onSubmit={this.onSubmit}
         >
+          <input type="hidden" name="form-name" value="contact" />
           <label className="form__name">
             <p>Name</p>
             <input
