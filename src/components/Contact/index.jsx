@@ -15,19 +15,16 @@ export default class index extends Component {
   onSubmit = async (event) => {
     event.preventDefault();
 
-    let formData = new FormData();
-
     for (let key of Object.keys(this.state)) {
       if (!this.state[key].trim()) return;
-      formData.append(key, this.state[key]);
     }
 
     this.setState({ formState: "submitting" });
 
     await fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: formData,
+      headers: { "Content-Type": "application/json" },
+      body: this.state,
     })
       .then(() => {
         this.setState({
@@ -67,7 +64,7 @@ export default class index extends Component {
           data-netlify={true}
           onSubmit={this.onSubmit}
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="ramanContact" />
           <label className="form__name">
             <p>Name</p>
             <input
