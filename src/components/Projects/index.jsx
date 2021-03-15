@@ -23,7 +23,7 @@ export default class index extends Component {
       <section className="projects" id="projects">
         <div className="projects__heading">
           <h2>My Projects</h2>
-          <p>I build while learning</p>
+          <p>Some of my projects I build while learning</p>
         </div>
 
         <div className="projects__cardsContainer">
