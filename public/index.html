@@ -66,9 +66,23 @@
       action="/"
       hidden
     >
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
+      <label className="form__name">
+        <p>Name</p>
+        <input type="text" name="name" required />
+      </label>
+      <label className="form__email">
+        <p>Email</p>
+        <input type="email" name="email" required />
+      </label>
+      <label className="form__subject">
+        <p>Subject</p>
+        <input type="text" name="subject" required />
+      </label>
+      <label className="form__message">
+        <p>Message</p>
+        <textarea name="message" id="" cols="30" rows="4" required></textarea>
+      </label>
+      <button type="submit">Submit</button>
     </form>
 
     <div id="root"></div>

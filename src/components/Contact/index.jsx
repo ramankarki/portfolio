@@ -12,6 +12,14 @@ export default class index extends Component {
     formState: "typing",
   };
 
+  encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   onSubmit = async (event) => {
     event.preventDefault();
 
@@ -23,8 +31,8 @@ export default class index extends Component {
 
     await fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: this.state,
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: this.encode({ "form-name": "ramanContact", ...this.state }),
     })
       .then(() => {
         this.setState({
