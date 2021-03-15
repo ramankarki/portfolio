@@ -62,8 +62,8 @@ export default class index extends Component {
 
         <form
           className="contact__form form"
-          netlify
-          name="contact"
+          data-netlify={true}
+          name="ramanContact"
           onSubmit={this.onSubmit}
         >
           <label className="form__name">
