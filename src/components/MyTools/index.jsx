@@ -11,7 +11,7 @@ class index extends Component {
       <section className="myTools" id="myTools">
         <div className="myTools__heading">
           <h2>My Tools</h2>
-          <p>I use most frequently for my projects</p>
+          <p>I use frequently for my projects</p>
         </div>
         <div className="myTools__table toolsTable">
           <section className="toolsTable__webDesign">

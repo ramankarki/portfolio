@@ -73,7 +73,8 @@ class App extends React.Component {
             <div className="section__desc">
               <img src={fastProjectIcon} alt="location icon" />
               <p>
-                I enjoy making projects that work and can be useful many people.
+                I enjoy making projects that work and can be useful for many
+                people.
               </p>
             </div>
           </div>
@@ -90,8 +91,7 @@ class App extends React.Component {
               <img src={jsIcon} alt="location icon" />
               <p>
                 I started by web dev journey from frontend learning basic html,
-                css, javascript and gradually upgraded my skills to then next
-                level.
+                css, javascript and gradually upgraded my skills to next level.
               </p>
             </div>
           </div>
