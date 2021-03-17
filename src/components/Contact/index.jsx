@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import "./Contact.scss";
 import exitIcon from "./exit.svg";
+import contactIcon from "./contact_icon.svg";
 
 export default class index extends Component {
   state = {
@@ -62,7 +63,10 @@ export default class index extends Component {
       <section className="contact" id="contact">
         <div className="contact__heading">
           <h2>Contact me</h2>
-          <p>Let's have some conversation</p>
+          <p>
+            Let's have some conversation{" "}
+            <img src={contactIcon} alt="contact icon" />
+          </p>
         </div>
 
         <form
