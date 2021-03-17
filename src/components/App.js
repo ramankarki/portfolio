@@ -73,8 +73,9 @@ class App extends React.Component {
             <div className="section__desc">
               <img src={fastProjectIcon} alt="location icon" />
               <p>
-                I enjoy making projects that work and can be useful for many
-                people.
+                In my spare time, I enjoy exploring new technologies, and
+                developing projects that can impact and benefit people in a
+                positive way.
               </p>
             </div>
           </div>
@@ -90,8 +91,9 @@ class App extends React.Component {
               <img src={cssIcon} alt="location icon" />
               <img src={jsIcon} alt="location icon" />
               <p>
-                I started by web dev journey from frontend learning basic html,
-                css, javascript and gradually upgraded my skills to next level.
+                I started my web development journey by learning frontend
+                technologies like HTML, CSS, and JavaScript. From there I
+                gradually improved my skills by building projects.
               </p>
             </div>
           </div>
@@ -106,7 +108,7 @@ class App extends React.Component {
               <img src={reactIcon} alt="location icon" />
               <img src={reduxIcon} alt="location icon" />
               <p>
-                After some projects, I picked react, redux and worked with APIs
+                After some projects, I picked React, Redux and worked with APIs
                 to make dynamic client side rendering projects.
               </p>
             </div>
@@ -124,8 +126,8 @@ class App extends React.Component {
               <img src={nodeIcon} alt="location icon" />
               <img src={mongodbIcon} alt="location icon" />
               <p>
-                After react, I started learning backend with nodejs, expressjs,
-                mongodb and build my own API to make full stack web apps.
+                After React, I started learning backend with NodeJS, ExpressJS,
+                MongoDB and build my own API to make full stack web apps.
               </p>
             </div>
           </div>
