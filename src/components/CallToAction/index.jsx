@@ -10,7 +10,7 @@ export default class index extends Component {
           <h3>Ready to work with me ?</h3>
           <p>
             Hire me as a part time web developer or let’s build some great
-            project together.
+            projects together.
           </p>
         </div>
         <a href="#contact">Let's do it</a>
