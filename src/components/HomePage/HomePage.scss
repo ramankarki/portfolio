@@ -99,6 +99,7 @@ $two-column: 768px;
   &__desc {
     margin-top: 1.5rem;
     color: $normal-text-color;
+    max-width: 450px;
 
     @media (min-width: 400px) {
       margin-top: 1.8rem;

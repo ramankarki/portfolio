@@ -14,7 +14,9 @@ class index extends Component {
           <h1 className="heroText__heading">I'm Raman Karki</h1>
           <h2 className="heroText__subheading">Full stack web developer</h2>
           <p className="heroText__desc">
-            I build full stack web apps with <span>MERN</span> stack
+            I build full-stack web apps with the <span>MERN</span> stack. <br />
+            However, I'm open to learn new and exciting technologies that can
+            work best for my projects.
           </p>
           <div className="heroText__callToAction">
             <a href="#contact">Hire me</a>
