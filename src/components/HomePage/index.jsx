@@ -20,7 +20,7 @@ class index extends Component {
           </p>
           <div className="heroText__callToAction">
             <a href="#contact">Hire me</a>
-            <p>or lets build a great project together</p>
+            <p>or let's build a great project together</p>
           </div>
         </div>
       </section>
