@@ -16,6 +16,7 @@ import mongodbIcon from "./img/mongodb.svg";
 import htmlIcon from "./img/html.svg";
 import cssIcon from "./img/css.svg";
 import jsIcon from "./img/js.svg";
+import projectIcon from "./img/project_icon.svg";
 
 export default class index extends Component {
   render() {
@@ -23,7 +24,10 @@ export default class index extends Component {
       <section className="projects" id="projects">
         <div className="projects__heading">
           <h2>My Projects</h2>
-          <p>Some of my projects I build while learning</p>
+          <p>
+            Some of my projects I build while learning{" "}
+            <img src={projectIcon} alt="project icon" />
+          </p>
         </div>
 
         <div className="projects__cardsContainer">
@@ -37,10 +41,11 @@ export default class index extends Component {
               <h3 className="card__heading">Chat App</h3>
               <p className="card__subheading">Featured project</p>
               <p className="card__desc">
-                A real time chat app with client side rendering with react and
-                redux. It has API on backend build with node, express, mongodb,
-                mongoose with authentication and authorization. It has all the
-                basic features to use as a real time chatting app.
+                A real time chat app with client side rendering, build with
+                React and Redux. It has API on backend build with NodeJS,
+                ExpressJS, MongoDB, MongooseJS with JWT authentication and
+                authorization. It has all the basic features to use as a real
+                time chatting app.
               </p>
               <img
                 className="card__techIcon"
@@ -216,6 +221,18 @@ export default class index extends Component {
             </div>
           </article>
         </div>
+
+        <p className="projects__moreProject">
+          You can visit my{" "}
+          <a
+            href="https://github.com/ramankarki"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github Profile
+          </a>{" "}
+          to see more projects I have made until now.
+        </p>
       </section>
     );
   }
