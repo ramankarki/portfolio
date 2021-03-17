@@ -17,6 +17,14 @@
 
     p {
       color: $normal-text-color;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+
+      img {
+        width: 25px;
+        height: auto;
+        margin-left: 0.5rem;
+      }
     }
   }
 }
