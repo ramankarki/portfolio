@@ -6,7 +6,6 @@ import githubIcon from './img/github_icon.svg';
 import chatAppSS from './img/chat_app.png';
 import folderListAppSS from './img/folder_list_app.png';
 import weatherAppSS from './img/weather_app.png';
-import jobSearchSS from './img/job_search_app.png';
 import easyStationarySS from './img/easy-stationary.png';
 import reactIcon from './img/react.svg';
 import reduxIcon from './img/redux.svg';
@@ -224,46 +223,6 @@ export default class index extends Component {
                 </a>
                 <a
                   href="https://github.com/ramankarki/weather-app"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={githubIcon} alt="github logo" />
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article className="card">
-            <img
-              className="card__projectSS"
-              src={jobSearchSS}
-              alt="search jobs app screen shot"
-            />
-            <div className="card__content">
-              <h3 className="card__heading">Search Jobs App</h3>
-              <p className="card__subheading">Featured project</p>
-              <p className="card__desc">
-                A simple app that uses github API to search for available jobs
-                in given location and gives description about the job and how to
-                apply.
-              </p>
-              <img
-                className="card__techIcon"
-                src={reactIcon}
-                alt="react icon"
-              />
-              <img className="card__techIcon" src={sassIcon} alt="sass icon" />
-              <span> API</span>
-              <div className="card__button">
-                <a
-                  href="https://githubjob-search.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={liveIcon} alt="live on internet icon" /> See live
-                </a>
-                <a
-                  href="https://github.com/ramankarki/job-search"
                   target="_blank"
                   rel="noreferrer"
                 >
