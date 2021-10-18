@@ -65,14 +65,14 @@ export default class index extends Component {
               <span>real time</span>
               <div className="card__button">
                 <a
-                  href="https://easy-stationary.netlify.app"
+                  href="https://eazeal.netlify.app"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img src={liveIcon} alt="live on internet icon" /> See live
                 </a>
                 <a
-                  href="https://github.com/ramankarki/easy-stationary"
+                  href="https://github.com/ramankarki/eazeal"
                   target="_blank"
                   rel="noreferrer"
                 >
