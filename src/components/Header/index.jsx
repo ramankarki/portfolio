@@ -73,6 +73,14 @@ class index extends Component {
               About
             </a>
             <a
+              href="https://ramankarki.hashnode.dev"
+              target="_blank"
+              rel="noreferrer"
+              className="nav__links"
+            >
+              Blog
+            </a>
+            <a
               href="#projects"
               className={`nav__links ${this.activeLinkClass("projects")}`}
             >
